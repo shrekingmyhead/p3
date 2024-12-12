@@ -7,6 +7,7 @@ export type Image = {
 export type Link = {
     text: string;
     href: string;
+    target?: string;
 };
 
 export type Hero = {
@@ -38,13 +39,9 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
-    image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
-    },
+    // title: 'Hi, I\'m Priyanka!',
+    // subtitle: 'Welcome to my personal site!',
+    // description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
     headerNavLinks: [
         {
             text: 'Home',
@@ -63,56 +60,34 @@ const siteConfig: SiteConfig = {
             href: '/tags'
         }
     ],
-    footerNavLinks: [
-        {
-            text: 'About',
-            href: '/about'
-        },
-        {
-            text: 'Contact',
-            href: '/contact'
-        },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
-        }
-    ],
-    socialLinks: [
-        {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
-        }
-    ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
-        image: {
-            src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
-        },
+        title: "Hi, I'm Priyanka",
+        text: `Welcome to my personal site! Here's my <a href='https://github.com/shrekingmyhead' target="_blank"  >GitHub</a>.<br>Connect with me on <a href='https://www.linkedin.com/in/priyanka-datta-133767221/' target="_blank">LinkedIn</a>.<br>
+           <br>Skills Accquired :
+           <div style="display: flex;">
+               <ul style="flex: 1; list-style-type: none;">
+                   <li>HTML/CSS</li>
+                   <li>JavaScript</li>
+                   <li>React.js</li>
+                   <li>Next.js</li>
+                   <li>Astro</li>
+               </ul>
+               <ul style="flex: 1; list-style-type: none;">
+                   <li>Python</li>
+                   <li>Scikit-learn</li>
+                   <li>C</li>
+                   <li>TypeScript</li>
+                   <li>MySQL</li>
+               </ul>
+           </div>`,
+
         actions: [
             {
-                text: 'Get in Touch',
-                href: '/contact'
+                text: 'Resume',
+                href: '/Priyanka_Datta-Resume.pdf',
+                target: '_blank'
             }
         ]
-    },
-    subscribe: {
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
-        formUrl: '#'
     },
     postsPerPage: 8,
     projectsPerPage: 8
